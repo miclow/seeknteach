@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="UTF-8">
+        <title>Seek N Teach</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css' />
+        <script src="resources/js/jquery-2.2.3.min.js"></script>
+        <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+        <link rel="stylesheet" href="vendors/css/bootstrap.css" />
+         <link rel="stylesheet" href="resources/css/custom.css" /> 
+        <style>
+        .logo img{
+            width: 80px;
+        }
+        .main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.25s;
+}
+         #menu{
+            background: #2bb7ba;
+             padding: 15px 20px;
+         }
+         .main-nav li a:link, .main-nav li a:visited{
+            color: #fff !important;
+            vertical-align: top;
+             font-weight:bold;
+         }
+         .profile{
+            margin-left: 15%;
+         }
+         .lang{
+            width:180px;
+            height: 40px;
+            border-radius: 3px;
+            border: 1px solid #66afe9;
+            font-size: 18px; 
+            margin: 2px;
+         }
+         .no-padding{
+            padding: 0px;
+         }
+         .form-group{
+            overflow: hidden;
+         }
+         .form-group label{
+            float:left;
+         }
+         section{
+            margin: 10px 0;
+            overflow: hidden;
+         }
+         .days{
+            float:left;
+            width: 80px;
+            font-size: 15px;
+            text-align: center;
+         }
+         .save-btn{
+            background: #3ECACD;
+            color:#fff;
+            padding: 5px 20px;
+            border-radius: 3px;
+            border: 1px solid #66afe9;
+            display: block;
+            text-align: center;
+         }
+         .save-btn a{
+            text-decoration: none;
+            text-align: center;
+
+         }
+         footer{
+            min-height: 100px;
+            background: #2bb7ba;
+         }
+        </style>
+    </head>
+
+    <body>
+    <div class="container-fluid">
+
+        <div id="menu" class="row">
+
+                <div class="col-md-2 logo">
+                    <img class="img-responsive title-logo" src="resources/img/SnTLogo.png" alt="Seek N Teach logo">
+                </div>       <!--Logo-->
+
+                <div class="col-md-10 main-nav text-right">
+                    <ul>
+                        <li><a href="#">MY PROFILE</a><br>پروفایل من</li>
+                        <li><a href="#">MY SCHEDULE</a><br>برنامه من</li>
+                        <li><a href="#">FIND TUTOR</a><br>پیدا کردن یک معلم</li>
+                        <li><a href="#">LOG OUT</a><br>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>      <!--Navbar ends here-->
+         
+           
+
+        <div class="row register">
+            <div class="col-xs-12 text-center">
+                
+                <h2>MY PROFILE<br>پروفایل من</h2>
+                <h3>Please add in your profile information and tutoring preferences:<br>
+                    لطفا اطلاعات و تنظیمات خود را وارد کنید</h3>
+            </div>
+
+            <div class="col-xs-8 profile">
+                <h3>ABOUT ME</h3>
+                  <form role="form">
+                    <section>
+                    <div class="form-group">
+                        <div class="col-xs-2 no-padding">
+                             <label for="usr">Name:</label>
+                         </div>
+                          <div class="col-xs-10">
+                              <input type="text" class="form-control" id="usr" placeholder="(Pre-entered)">
+                           </div>   
+                    </div>
+
+                    <div class="form-group">
+                         <div class="col-xs-2 no-padding">
+                            <label for="email">Email:</label>
+                         </div>   
+                          <div class="col-xs-10">
+                             <input type="email" class="form-control" id="email" placeholder="(Pre-entered)">
+                          </div>   
+                    </div>
+
+                    <div class="form-group">
+                         <div class="col-xs-2 no-padding">
+                             <label for="pwd">Password:</label>
+                         </div>
+                          <div class="col-xs-10">    
+                             <input type="password" class="form-control" id="pwd" placeholder="(Pre-entered)">
+                          </div>   
+                    </div>
+                    <div class="form-group">
+                         <div class="col-xs-2 no-padding">
+                            <label for="pwd">My location:</label>
+                         </div>
+                          <div class="col-xs-10">   
+                             <input type="password" class="form-control" id="pwd" placeholder="(Pre-entered)">
+                          </div>  
+                    </div>
+                     <div class="form-group">
+                         <div class="col-xs-2 no-padding">
+                            <label for="native">My native language:</label>
+                         </div>
+                          <div class="col-xs-10">   
+                            <input type="password" class="form-control" id="lang" placeholder="(Pre-entered)">
+                          </div>  
+                    </div>
+                    <div class="form-group">
+                        <div class="no-padding col-xs-3">
+                         <label for="lang">My English level:</label>
+                        </div>
+                      <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">No English</button>
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">Basic English</button >
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang"  href="#">Intermediate English</button >
+                     </div>
+                    </div>
+
+                    </section>
+                    <section>
+                    <h3>Preferences (Optional)</h3>
+                     <div class="form-group">
+                    <div class="col-xs-3 no-padding">
+                       <label>Days available</label>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="days">
+                             Monday<br><input type="radio" />
+                         </div>
+                         <div class="days">    
+                            Tuesday<br><input type="radio" />
+                          </div>  
+                          <div class="days">    
+                              Wednesday<br><input type="radio" />
+                         </div>  
+                         <div class="days">     
+                                Thursday<br><input type="radio" />
+                        </div>      
+                         <div class="days">    
+                                Friday<br><input type="radio" />
+                         </div>   
+                         <div class="days">    
+                            Saturday<br><input type="radio" />
+                        </div>    
+                          <div class="days">    
+                            Sunday<br><input type="radio" />
+                        </div>   
+                     </div>
+                  </div>
+                 <div class="form-group">
+                        <div class="no-padding col-xs-3">
+                      <label for="lang">Time of day:</label>
+                        </div>
+                      <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">Morning</button>
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">Afternoon</button >
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang"  href="#">Night</button >
+                     </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="no-padding col-xs-3">
+                      <label for="lang">Tutor's gender:</label>
+                        </div>
+                      <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">Male</button>
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">Female</button >
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang"  href="#">No preference</button >
+                     </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="no-padding col-xs-3">
+                      <label for="lang">Size of class:</label>
+                        </div>
+                      <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">1-1</button>
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang" href="#">Group</button >
+                     </div>
+                     <div class="col-md-3 col-xs-12">
+                      <button class="lang"  href="#">Online</button >
+                     </div>
+                    </div>
+                     <div class="form-group">
+                         <div class="col-xs-4">
+                     
+                     </div>
+                     <div class="col-xs-4">
+                      <button class="save-btn" href="#">Save Information</button >
+                     </div>
+                     <div class="col-xs-4">
+                        <div class="save-btn">
+                        <a href="search.html">Search For Tutor</a>
+                        <div>
+                     </div>
+                    </div>
+                </section>
+                  </form>
+            </div>
+
+            </div>
+
+        
+
+        </div>      <!--Container ends here-->
+        <footer></footer>
+    </body>
+</html>

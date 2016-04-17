@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Seek and Teach</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="resources/js/jquery-2.2.3.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="resources/css/custom.css" />
+        
+        <script src="resources/js/tutors.js"></script>
+
+    <!--     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+     -->
+        <link rel="stylesheet" href="leaflet/leaflet.css" />
+        <script src="leaflet/leaflet.js"></script>
+        
+
+        <style>
+            body {
+                padding: 0;
+                margin: 0 auto;
+            }
+            html, body {
+                height: 100%;
+            }
+            h1{
+                text-align: left;
+                margin-top: 50px;
+            }
+            .logo img{
+            width: 80px;
+        }
+        .main-nav {
+          float: right;
+           list-style: none;
+          }
+
+          .main-nav li {
+              display: inline-block;
+              margin-left: 40px;
+              color: white;
+          }
+         #menu{
+            background: #2bb7ba;
+             padding: 15px 20px;
+         }
+         .main-nav li a:link, .main-nav li a:visited{
+            color: #fff !important;
+            vertical-align: top;
+             font-weight:bold;
+         }
+            #search{
+                 margin: 50px auto;
+            }
+            #map {
+                height:100%;
+                width: 100%;
+                min-height: 500px;
+                position: absolute;
+               
+            }
+
+            input[type="text"] {
+                height:34px; 
+                width: 100%;
+                font-size: 20px;
+               margin: 0 auto;
+               border: 1px solid #B0C4DE     ;
+            }
+            #tutor-list{
+               margin: 0;
+               padding: 0;
+            }
+            #tutor img{
+                width: 250px;
+                margin: 20px 0;
+            }
+            #tutor-list li{
+                list-style: none;
+                margin-bottom: 10px;
+                overflow: hidden;
+                background: #F0F8FF;
+                padding: 10px 0 20px 0;
+            }
+            .connect{
+                background: #00BFFF;
+                width: 150px;
+                height: 40px;
+                color: #fff;
+                margin: 20px 0;
+            }
+            #addressSearch{
+                background: #77ad39;
+                padding: 6px 42px;
+                color:#fff;
+            }
+           footer{
+            min-height: 100px;
+            background: #2bb7ba;
+         }
+        </style>
+    </head>
+    <body>
+      <div id="menu" class="row">
+
+                <div class="col-md-2 logo">
+                    <img class="img-responsive title-logo" src="resources/img/SnTLogo.png" alt="Seek N Teach logo">
+                </div>       <!--Logo-->
+
+                <div class="col-md-10 main-nav text-right">
+                    <ul>
+                        <li><a href="#">MY PROFILE</a><br>پروفایل من</li>
+                        <li><a href="#">MY SCHEDULE</a><br>برنامه من</li>
+                        <li><a href="#">FIND TUTOR</a><br>پیدا کردن یک معلم</li>
+                        <li><a href="#">LOG OUT</a><br>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>      <!--Navbar ends here-->
+         
+         <div class="container">
+
+        
+            <div id="tutor" class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-4">
+                        <img src="resources/img/icon-f.png" />
+                    </div>
+                      <div class="col-md-8 col-xs-12">
+                        <h1>Kristin</h1>
+                        <h3>12 years English teaching experience in Australia</h3>
+                        <button class="connect">Contact Tutor</button>
+                      </div>
+                 </div>   
+             </div>   
+              <div id="tutor" class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-8">
+                        <h3>About Me</h3>
+                        <p>I'm originally from Alaska, USA. I came to Australia in 2012. </p>
+                        <p>I have been teaching English as a second language for over 10 years in Australia. I have taught business English and normal every day English. If you are studying for the TOEFL or IELTS test I can help. I know how to incorporate phrasal verbs and idioms into the conversation to get my students to learn how to speak English like a native speaker.</p>
+
+<p>Interests: I love to be outdoors, hiking, biking, swimming or sailing. I live near a lake in Canada so I get to go sailing a lot. I am also interested in psychology, history, geography and other cultures. I love talking to people and I love teaching. In fact, I love talking to students from all over the world. </p>
+
+
+<p>Spoken Languages: English (Native) </p>
+                            <button class="connect">Book a session</button>
+                    </div>
+                      <div class="col-xs-4">                     
+                       
+                      </div>
+                 </div>   
+             </div>   
+
+        </div>     
+<footer></footer>
+</body>
+</html>
