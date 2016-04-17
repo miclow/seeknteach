@@ -9,20 +9,32 @@
         <link rel="stylesheet" href="vendors/css/bootstrap.css">
         <link rel="stylesheet" href="resources/css/custom.css">
         <script src="resources/js/jquery-2.2.3.min.js"></script>
+        
         <style>
         .no-padding{
             padding: 0;
         }
+       
         </style>
     </head>
 
     <body>
     <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+     
     <div class="row header">
-        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="row rectangle-1">
             
-            <div class="col-md-5 navbar text-left">
+            <div class="col-xs-5 navbar text-left">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Stories</a></li>
@@ -30,11 +42,11 @@
                 </ul>
             </div>
             
-            <div class="col-md-2 header-logo">
+            <div class="col-xs-2 header-logo">
                 <img src="resources/img/SnTLogo.png" alt="Seek n Teach Logo">
             </div>
             
-            <div class="col-md-5 navbar no-padding">
+            <div class="col-xs-5 navbar no-padding">
                 <form class="form-inline">
                   <div class="form-group">
                     <label for="exampleInputName2">Name</label>
@@ -48,7 +60,8 @@
                 </form>
             </div>
         </div>
-        
+        </div>
+       
         <div class="row text-center">
             <div class="col-md-12 text-center"> 
                 <h1 class="connect-with-a-seek">Connect to a Seek 'n' Teach tutor near you!</h1>
